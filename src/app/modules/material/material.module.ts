@@ -14,16 +14,22 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DirectionFormComponent } from './components/direction-form/direction-form.component';
 
 @NgModule({
-  declarations: [
-  
-    DirectionFormComponent
+  declarations: [DirectionFormComponent],
+  imports: [
+    CommonModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
   ],
-  imports: [CommonModule, MatInputModule, MatButtonModule, MatSelectModule, MatRadioModule, MatCardModule, ReactiveFormsModule],
   exports: [
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
     MatButtonModule,
+    DirectionFormComponent,
   ],
 })
 export class MaterialModule {}
