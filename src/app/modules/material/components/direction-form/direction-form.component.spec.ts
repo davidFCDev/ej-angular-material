@@ -7,15 +7,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 
-import { ComponentsComponent } from './components.component';
+import { DirectionFormComponent } from './direction-form.component';
 
-describe('ComponentsComponent', () => {
-  let component: ComponentsComponent;
-  let fixture: ComponentFixture<ComponentsComponent>;
+describe('DirectionFormComponent', () => {
+  let component: DirectionFormComponent;
+  let fixture: ComponentFixture<DirectionFormComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ComponentsComponent],
+      declarations: [DirectionFormComponent],
       imports: [
         NoopAnimationsModule,
         ReactiveFormsModule,
@@ -29,7 +29,7 @@ describe('ComponentsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComponentsComponent);
+    fixture = TestBed.createComponent(DirectionFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

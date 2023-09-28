@@ -4,11 +4,11 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-components',
-  templateUrl: './components.component.html',
-  styleUrls: ['./components.component.scss']
+  selector: 'app-direction-form',
+  templateUrl: './direction-form.component.html',
+  styleUrls: ['./direction-form.component.scss']
 })
-export class ComponentsComponent {
+export class DirectionFormComponent {
   private fb = inject(FormBuilder);
   addressForm = this.fb.group({
     company: null,
