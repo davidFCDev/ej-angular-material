@@ -23,9 +23,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { TreeComponent } from './components/tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { DragDropComponent } from './components/drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
-  declarations: [DirectionFormComponent, TableFormComponent, NavComponent, TreeComponent],
+  declarations: [DirectionFormComponent, TableFormComponent, NavComponent, TreeComponent, DragDropComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -42,6 +44,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatIconModule,
     MatListModule,
     MatTreeModule,
+    DragDropModule,
   ],
   exports: [
     MatDatepickerModule,
@@ -52,6 +55,7 @@ import { MatTreeModule } from '@angular/material/tree';
     TableFormComponent,
     NavComponent,
     TreeComponent,
+    DragDropComponent,
   ],
 })
 export class MaterialModule {}
