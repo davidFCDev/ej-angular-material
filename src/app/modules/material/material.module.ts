@@ -21,9 +21,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { TreeComponent } from './components/tree/tree.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
-  declarations: [DirectionFormComponent, TableFormComponent, NavComponent],
+  declarations: [DirectionFormComponent, TableFormComponent, NavComponent, TreeComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -39,6 +41,7 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatTreeModule,
   ],
   exports: [
     MatDatepickerModule,
@@ -48,6 +51,7 @@ import { MatListModule } from '@angular/material/list';
     DirectionFormComponent,
     TableFormComponent,
     NavComponent,
+    TreeComponent,
   ],
 })
 export class MaterialModule {}
