@@ -12,9 +12,13 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DirectionFormComponent } from './components/direction-form/direction-form.component';
+import { TableFormComponent } from './components/table-form/table-form.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
-  declarations: [DirectionFormComponent],
+  declarations: [DirectionFormComponent, TableFormComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -23,6 +27,9 @@ import { DirectionFormComponent } from './components/direction-form/direction-fo
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   exports: [
     MatDatepickerModule,
@@ -30,6 +37,7 @@ import { DirectionFormComponent } from './components/direction-form/direction-fo
     MatNativeDateModule,
     MatButtonModule,
     DirectionFormComponent,
+    TableFormComponent,
   ],
 })
 export class MaterialModule {}
