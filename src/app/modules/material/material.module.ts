@@ -16,9 +16,14 @@ import { TableFormComponent } from './components/table-form/table-form.component
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { NavComponent } from './components/nav/nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
-  declarations: [DirectionFormComponent, TableFormComponent],
+  declarations: [DirectionFormComponent, TableFormComponent, NavComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -30,6 +35,10 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   exports: [
     MatDatepickerModule,
@@ -38,6 +47,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatButtonModule,
     DirectionFormComponent,
     TableFormComponent,
+    NavComponent,
   ],
 })
 export class MaterialModule {}
